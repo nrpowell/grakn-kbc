@@ -1,0 +1,117 @@
+insert
+
+$transitiveMeronym isa inference-rule
+lhs  {
+  (meronym-left: $a, meronym-right: $b) isa meronym;
+  (meronym-left: $b, meronym-right: $c) isa meronym;
+},
+rhs {
+  (meronym-left: $a, meronym-right: $c) isa meronym;
+};
+
+$transitiveHolonym isa inference-rule
+lhs  {
+  (holonym-left: $a, holonym-right: $b) isa holonym;
+  (holonym-left: $b, holonym-right: $c) isa holonym;
+},
+rhs {
+  (holonym-left: $a, holonym-right: $c) isa holonym;
+};
+
+$transitiveInstance isa inference-rule
+lhs  {
+  (instance-left: $a, instance-right: $b) isa has-instance;
+  (instance-left: $b, instance-right: $c) isa has-instance;
+},
+rhs {
+  (instance-left: $a, instance-right: $c) isa has-instance;
+};
+
+$transitiveTypeof isa inference-rule
+lhs  {
+  (type-left: $a, type-right: $b) isa type-of;
+  (type-left: $b, type-right: $c) isa type-of;
+},
+rhs {
+  (type-left: $a, type-right: $c) isa type-of;
+};
+
+$transitivePartof isa inference-rule
+lhs  {
+  (partof-left: $a, partof-right: $b) isa part-of;
+  (partof-left: $b, partof-right: $c) isa part-of;
+},
+rhs {
+  (partof-left: $a, partof-right: $c) isa part-of;
+};
+
+$transitiveHaspart isa inference-rule
+lhs  {
+  (haspart-left: $a, haspart-right: $b) isa has-part;
+  (haspart-left: $b, haspart-right: $c) isa has-part;
+},
+rhs {
+  (haspart-left: $a, haspart-right: $c) isa has-part;
+};
+
+$transitiveSubinstance isa inference-rule
+lhs  {
+  (subinstance-left: $a, subinstance-right: $b) isa subordinate-instance-of;
+  (subinstance-left: $b, subinstance-right: $c) isa subordinate-instance-of;
+},
+rhs {
+  (subinstance-left: $a, subinstance-right: $c) isa subordinate-instance-of;
+};
+
+$transitiveDomainregion isa inference-rule
+lhs  {
+  (domainregion-left: $a, domainregion-right: $b) isa domain-region;
+  (domainregion-left: $b, domainregion-right: $c) isa domain-region;
+},
+rhs {
+  (domainregion-left: $a, domainregion-right: $c) isa domain-region;
+};
+
+$substitutionDomainregion isa inference-rule
+lhs  {
+  (domainregion-left: $a, domainregion-right: $c) isa domain-region;
+  (domainregion-left: $b, domainregion-right: $c) isa domain-region;
+},
+rhs {
+  (domainregion-left: $a, domainregion-right: $b) isa domain-region;
+};
+
+$transitiveSyndomaintopic isa inference-rule
+lhs  {
+  (syndomaintopic-left: $a, syndomaintopic-right: $b) isa synset-domain-topic;
+  (syndomaintopic-left: $b, syndomaintopic-right: $c) isa synset-domain-topic;
+},
+rhs {
+  (syndomaintopic-left: $a, syndomaintopic-right: $c) isa synset-domain-topic;
+};
+
+$transitiveSimilar isa inference-rule
+lhs  {
+  (similar-left: $a, similar-right: $b) isa similar-to;
+  (similar-left: $b, similar-right: $c) isa similar-to;
+},
+rhs {
+  (similar-left: $a, similar-right: $c) isa similar-to;
+};
+
+$transitiveDomaintopic isa inference-rule
+lhs  {
+  (domaintopic-left: $a, domaintopic-right: $b) isa domain-topic;
+  (domaintopic-left: $b, domaintopic-right: $c) isa domain-topic;
+},
+rhs {
+  (domaintopic-left: $a, domaintopic-right: $c) isa domain-topic;
+};
+
+$mirrorSimilar isa inference-rule
+lhs  {
+  (similar-left: $a, similar-right: $b) isa similar-to;
+},
+rhs {
+  (similar-left: $b, similar-right: $a) isa similar-to;
+};

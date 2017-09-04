@@ -1,0 +1,84 @@
+insert
+
+word sub entity
+	has name
+	plays instance-left
+	plays instance-right
+	plays type-left
+	plays type-right
+	plays meronym-left
+	plays meronym-right
+	plays holonym-left
+	plays holonym-right
+	plays partof-left
+	plays partof-right
+	plays haspart-left
+	plays haspart-right
+	plays subinstance-left
+	plays subinstance-right
+	plays domainregion-left
+	plays domainregion-right
+	plays syndomaintopic-left
+	plays syndomaintopic-right
+	plays similar-left
+	plays similar-right
+	plays domaintopic-left
+	plays domaintopic-right;
+
+instance-left sub role; instance-right sub role;
+has-instance sub relation
+	relates instance-left
+	relates instance-right;
+
+type-left sub role; type-right sub role;
+type-of sub relation
+	relates type-left
+	relates type-right;
+
+meronym-left sub role; meronym-right sub role;
+meronym sub relation
+	relates meronym-left
+	relates meronym-right;
+
+holonym-left sub role; holonym-right sub role;
+holonym sub relation
+	relates holonym-left
+	relates holonym-right;
+
+partof-left sub role; partof-right sub role;
+part-of sub relation
+	relates partof-left
+	relates partof-right;
+
+haspart-left sub role; haspart-right sub role;
+has-part sub relation
+	relates haspart-left
+	relates haspart-right;
+
+subinstance-left sub role; subinstance-right sub role;
+subordinate-instance-of sub relation
+	relates subinstance-left
+	relates subinstance-right;
+
+domainregion-left sub role; domainregion-right sub role;
+domain-region sub relation
+	relates domainregion-left
+	relates domainregion-right;
+
+syndomaintopic-left sub role; syndomaintopic-right sub role;
+synset-domain-topic sub relation
+	relates syndomaintopic-left
+	relates syndomaintopic-right;
+
+similar-left sub role; similar-right sub role;
+similar-to sub relation
+	relates similar-left
+	relates similar-right;
+
+domaintopic-left sub role; domaintopic-right sub role;
+domain-topic sub relation
+	relates domaintopic-left
+	relates domaintopic-right;
+
+
+name sub resource datatype string;
