@@ -1,8 +1,8 @@
 # Neural Tensor Network for Knowledge Base Completion with GRAKN.AI
 -------------------------------------
-Credits for the (bulk of the) neural network file code go to Siddarth Agarwal. His GitHub repo for this project is https://github.com/siddharth-agrawal/Neural-Tensor-Network
+## Credits for the (bulk of the) neural network file code go to Siddarth Agarwal. His GitHub repo for this project is https://github.com/siddharth-agrawal/Neural-Tensor-Network
 
-Credits for the neural tensor network project itself go to http://nlp.stanford.edu/~socherr/SocherChenManningNg_NIPS2013.pdf
+## Credits for the neural tensor network project itself go to http://nlp.stanford.edu/~socherr/SocherChenManningNg_NIPS2013.pdf
 -------------------------------------
 
 To run this program, you will first need to have installed Grakn (this was written on 0.15.0). If you're coming here from the blog, then you probably already have grakn installed, but if you don't, you can use something like Homebrew to quickly get up and running, using the command
