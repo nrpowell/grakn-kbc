@@ -44,3 +44,5 @@ Once you have loaded the ontology and ruleset for a particular keyspace, REMOVE 
 python ./neuralTensorNetwork.py -k insert_your_keyspace_here
 ```
 If you try to add the ontology to a keyspace that already has the ontology loaded, you may encounter errors, especially if you have made changes to the ontology.gql file.
+-------------------------------------
+Be patient when running this program. With 200 epochs, the NN takes ~6-8 hours to train - remember that this implementation does not make use TF or Theano. Each round of Grakn inference checks takes ~2 hours, depending on how many entities you are checking and how big your graph is. Each round of likely triplet searching takes about 1 hour as well. Inserting relations into the graph is much faster than these other tasks but is also non-trivial.
